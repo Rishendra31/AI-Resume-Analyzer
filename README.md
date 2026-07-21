@@ -175,8 +175,8 @@ This project is licensed under the MIT License.
 
 GitHub: https://github.com/Rishendra31
 
-LinkedIn: *(Add your LinkedIn profile here)*
 
----
+
+
 
 ⭐ If you found this project useful, consider giving it a star!
