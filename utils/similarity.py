@@ -1,4 +1,4 @@
-import re
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -6,10 +6,7 @@ from utils.resume_parser import extract_skills
 
 
 def calculate_similarity(resume_text, job_description):
-    """
-    Calculates similarity percentage between
-    resume and job description using TF-IDF + Cosine Similarity.
-    """
+   
 
     documents = [resume_text, job_description]
 
@@ -26,10 +23,7 @@ def calculate_similarity(resume_text, job_description):
 
 
 def find_missing_skills(resume_skills, job_description):
-    """
-    Finds skills that are present in the
-    job description but missing from the resume.
-    """
+   
 
     jd_text = job_description.lower()
 
