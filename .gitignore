@@ -1,0 +1,8 @@
+venv/
+.env
+__pycache__/
+*.pyc
+.faiss/
+faiss_index/
+uploads/
+.streamlit/
