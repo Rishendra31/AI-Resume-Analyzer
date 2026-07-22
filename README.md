@@ -1,176 +1,102 @@
-# 📄 AI Resume Analyzer
+# 🤖 AI Resume Analyzer
 
-An AI-powered Resume Analyzer built with **Python, Streamlit, LangChain, and Groq LLM** that evaluates resumes, calculates an ATS score, compares them with job descriptions, identifies missing skills, and provides AI-generated improvement suggestions.
+An AI-powered Resume Analyzer that evaluates a resume against a job description using ATS-style scoring, skill matching, and AI-generated feedback.
 
----
+## 🌐 Live Demo
 
-## 🚀 Features
-
-- 📄 Upload Resume (PDF)
-- 📝 Extract text from resume
-- 📊 Calculate ATS Score
-- 🛠 Extract technical skills
-- 📌 Compare resume with Job Description
-- 📈 Resume Match Percentage
-- ❌ Identify Missing Skills
-- 🤖 AI-generated resume feedback using Groq LLM
-- 💻 Simple and interactive Streamlit interface
+🔗 https://rishendra-resume-analyzer.streamlit.app/
 
 ---
 
-## 🛠 Tech Stack
+## ✨ Features
+
+- 📄 Upload Resume in PDF format
+- 💼 Compare Resume with Job Description
+- 📊 ATS Score Calculation
+- 🎯 Job Match Percentage
+- 🧠 AI-Powered Resume Feedback using Groq LLM
+- 🔍 Missing Skills Detection
+- ⚡ Fast and Interactive Streamlit Interface
+
+---
+
+## 🛠️ Tech Stack
 
 - Python
 - Streamlit
-- PyPDF
 - LangChain
-- Groq API
+- Groq LLM
 - Scikit-learn
-- TF-IDF Vectorizer
-- Cosine Similarity
-- Python Dotenv
+- Pandas
+- NumPy
+- PyPDF
+- Regular Expressions (Regex)
 
 ---
 
 ## 📂 Project Structure
 
-```
-AI-Resume-Analyzer/
-│
-├── app.py
-├── requirements.txt
-├── .env
-├── README.md
-│
-├── utils/
-│   ├── pdf_reader.py
-│   ├── resume_parser.py
-│   ├── ats_score.py
-│   ├── similarity.py
-│   └── llm.py
-│
-└── uploads/
+```text
+ai-resume-analyzer/
+│── app.py
+│── requirements.txt
+│── README.md
+│── utils/
+│   ├── ats.py
+│   ├── llm.py
+│   ├── parser.py
+│   └── skills.py
 ```
 
 ---
 
-## ⚙️ Installation
-
-### Clone the repository
+## 🚀 Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/AI-Resume-Analyzer.git
-```
-
-### Navigate to the project
-
-```bash
-cd AI-Resume-Analyzer
-```
-
-### Create a virtual environment
-
-```bash
-python -m venv venv
-```
-
-### Activate the virtual environment
-
-#### Windows
-
-```bash
-venv\Scripts\activate
-```
-
-#### Linux / macOS
-
-```bash
-source venv/bin/activate
-```
-
-### Install dependencies
-
-```bash
+git clone https://github.com/Rishendra31/ai-resume-analyzer.git
+cd ai-resume-analyzer
 pip install -r requirements.txt
-```
-
----
-
-## 🔑 Configure API Key
-
-Create a `.env` file in the project root.
-
-```env
-GROQ_API_KEY=your_api_key_here
-```
-
----
-
-## ▶️ Run the Application
-
-```bash
 streamlit run app.py
 ```
 
 ---
 
-## 📊 How It Works
+## 💻 How to Use
 
-1. Upload a PDF resume.
-2. Extract resume text.
-3. Detect technical skills.
-4. Calculate an ATS score.
-5. Compare the resume with a job description.
-6. Calculate a resume match percentage.
-7. Identify missing skills.
-8. Generate AI-powered feedback using Groq LLM.
+1. Open the application.
+2. Upload your resume in PDF format.
+3. Paste the job description.
+4. Click **Analyze Resume**.
+5. View:
+   - ATS Score
+   - Job Match Percentage
+   - Missing Skills
+   - AI-Generated Feedback
 
 ---
 
-## 📸 Screenshots
+## 📸 Demo
 
-Add screenshots of the application here.
+Visit the live application:
 
-Example:
-
-```
-Home Page
-
-Resume Analysis
-
-AI Feedback
-```
+👉 https://rishendra-resume-analyzer.streamlit.app/
 
 ---
 
 ## 🔮 Future Improvements
 
-- Semantic similarity using Sentence Transformers
-- RAG-based resume analysis
+- Support DOCX resumes
+- Resume improvement suggestions
 - Downloadable PDF report
-- Resume keyword optimization
-- Experience and education extraction
-- Interactive analytics dashboard
-- Multi-language resume support
+- Multiple resume comparison
+- Dark mode
+- More ATS scoring metrics
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, suggestions, and improvements are welcome.
-
-Feel free to fork the repository and submit a pull request.
+Contributions are welcome! Feel free to fork this repository, create a new branch, and submit a pull request.
 
 ---
 
-## 👨‍💻 Author
-
-**Rishendra Sai**
-
-GitHub: https://github.com/Rishendra31
-
-
-
-
-
-⭐ If you found this project useful, consider giving it a star!
